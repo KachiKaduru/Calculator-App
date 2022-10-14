@@ -1,0 +1,39 @@
+.light {
+    background: linear-gradient(to right top, #42869B, #232d31);
+
+    * {
+
+        button,
+        .output {
+            color: $b-color-l;
+        }
+    }
+
+    .container {
+        background: $c-l-bg;
+    }
+
+    .top .modes {
+        background: $modes-l;
+
+        .t-bg {
+            background: $l-tog-btn;
+        }
+
+        .night {
+            filter: invert(1);
+            opacity: .7;
+        }
+    }
+
+    .buttons {
+        background: $light-bg;
+
+        .functions,
+        .operators,
+        .operators .eql,
+        .digits button {
+            background: $light;
+        }
+    }
+}

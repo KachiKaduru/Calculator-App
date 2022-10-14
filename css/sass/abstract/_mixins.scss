@@ -1,0 +1,28 @@
+@mixin font($fw, $fs, $lh, $ls: 0) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin grd-col($gc, $gap: 0) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($gc, 1fr));
+    gap: $gap;
+}
+
+@mixin padding($ps, $pb: 0) {
+    padding: 0 $ps $pb;
+}
+
+@mixin margins ($ms, $mb: 0) {
+    margin: 0 $ms $mb;
+}
+
+// @mixin buttons() {
+//     border-radius: ;
+//     background-color: ;
+//     font-size: ;
+//     @include padding(, );
+//     display; grid;
+// }

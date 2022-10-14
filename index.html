@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="light">
+    <div class="container">
+      <div class="top">
+        <div class="modes">
+          <img src="/images/day.svg" class="day t-bg" data-mode="day" alt="day mode" />
+          <img src="/images/night.svg" class="night" data-mode="night" alt="night mode" />
+        </div>
+
+        <div class="output-bar">
+          <button class="sign"></button>
+          <div class="output">
+            <p class="prev-ops" data-prev="prev"></p>
+            <p class="current-ops" data-current="current"></p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons br-40">
+        <div class="functions br-40">
+          <button data-clear="clear">AC</button>
+          <button data-delete="delete">DEL</button>
+          <button data-percent="percent">%</button>
+        </div>
+
+        <div class="operators br-40">
+          <button class="ops" data-ops="divide" data-symbol="/">÷</button>
+          <button class="ops" data-ops="times" data-symbol="*">&times;</button>
+          <button class="ops" data-ops="subtract" data-symbol="-">-</button>
+          <button class="ops" data-ops="add" data-symbol="+">+</button>
+          <button class="ops eql" data-equal="equal">=</button>
+        </div>
+
+        <div class="digits br">
+          <button class="num" data-num="1">1</button>
+          <button class="num" data-num="2">2</button>
+          <button class="num" data-num="3">3</button>
+          <button class="num" data-num="4">4</button>
+          <button class="num" data-num="5">5</button>
+          <button class="num" data-num="6">6</button>
+          <button class="num" data-num="7">7</button>
+          <button class="num" data-num="8">8</button>
+          <button class="num" data-num="9">9</button>
+          <button class="num" data-num="dot">.</button>
+          <button class="num" data-num="0">0</button>
+          <button class="num" data-num="00">00</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

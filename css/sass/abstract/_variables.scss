@@ -1,0 +1,21 @@
+$font-f: 'Poppins', sans-serif;
+
+$b-size: 7rem;
+
+$b-color-l: #222222;
+$b-color-d: #FBFBFB;
+
+$light: rgba(255, 255, 255, 0.5);
+$dark: rgba(5, 5, 5, 0.3);
+
+$light-bg: linear-gradient(to right top, rgba(199, 234, 255, .5), rgba(133, 206, 255, .5));
+$dark-bg: linear-gradient(to right top, rgba(0, 34, 53, .4), rgba(3, 140, 219, 0.4));
+
+$modes-l: rgba(169, 220, 253, 1);
+$modes-d: rgba(27, 106, 156, 1);
+
+$l-tog-btn: #D8EEFF;
+$d-tog-btn: #003661;
+
+$c-l-bg: linear-gradient(166.34deg, #FEFEFE 0%, #F9F9F9 12.84%, #F3F3F3 32.53%, #E5E5E5 100%);
+$c-d-bg: linear-gradient(166.34deg, #373737 0%, #252628 22.9%, #000309 100%);

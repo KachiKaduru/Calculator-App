@@ -1,0 +1,219 @@
+.light {
+  background: linear-gradient(to right top, #42869B, #232d31);
+}
+.light * button,
+.light * .output {
+  color: #222222;
+}
+.light .container {
+  background: linear-gradient(166.34deg, #FEFEFE 0%, #F9F9F9 12.84%, #F3F3F3 32.53%, #E5E5E5 100%);
+}
+.light .top .modes {
+  background: rgb(169, 220, 253);
+}
+.light .top .modes .t-bg {
+  background: #D8EEFF;
+}
+.light .top .modes .night {
+  filter: invert(1);
+  opacity: 0.7;
+}
+.light .buttons {
+  background: linear-gradient(to right top, rgba(199, 234, 255, 0.5), rgba(133, 206, 255, 0.5));
+}
+.light .buttons .functions,
+.light .buttons .operators,
+.light .buttons .operators .eql,
+.light .buttons .digits button {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.dark {
+  background: linear-gradient(to left bottom, #42869B, #232d31);
+}
+.dark * button,
+.dark * .output {
+  color: #FBFBFB;
+}
+.dark .container {
+  background: linear-gradient(166.34deg, #373737 0%, #252628 22.9%, #000309 100%);
+}
+.dark .top .modes {
+  background: rgb(27, 106, 156);
+}
+.dark .top .modes .t-bg {
+  background: #003661;
+}
+.dark .top .modes .day {
+  filter: invert(0);
+  mix-blend-mode: darken;
+}
+.dark .buttons {
+  background: linear-gradient(to right top, rgba(0, 34, 53, 0.4), rgba(3, 140, 219, 0.4));
+}
+.dark .buttons .functions,
+.dark .buttons .operators,
+.dark .buttons .operators .eql,
+.dark .buttons .digits button {
+  background: rgba(5, 5, 5, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  transition: all 0.2s;
+  font-family: "Poppins", sans-serif;
+}
+* button {
+  aspect-ratio: 1/1;
+  width: 7rem;
+  border-radius: 50%;
+  background: none;
+  font-weight: 600;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background-repeat: repeat-x;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  margin: 1rem 0 0;
+}
+
+.container {
+  max-width: 43.9rem;
+  border-radius: 40px;
+  display: grid;
+  box-shadow: 0 -5px 30px 2px rgba(6, 56, 73, 0.452);
+  scale: 0.78;
+}
+
+.br-40 {
+  border-radius: 4rem;
+}
+
+.t-bg {
+  border: 2px solid #42869B;
+}
+
+.top {
+  border-radius: 40px 40px 0 0;
+  padding: 5.5rem 3.4rem 0;
+  box-sizing: border-box;
+  height: 33rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 43.9rem;
+}
+.top .modes {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 4rem;
+}
+.top .modes img {
+  width: 3rem;
+  display: block;
+  padding: 0.7rem;
+  border-radius: 4rem;
+}
+.top .output-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  overflow: hidden;
+}
+.top .output-bar .sign {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0;
+  align-self: center;
+  font-size: 28px;
+}
+.top .output-bar .output {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-sizing: border-box;
+  text-align: right;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 60px;
+}
+
+.buttons {
+  box-shadow: 0px -5px 70px rgba(0, 0, 0, 0.6);
+  border-radius: 3rem 3rem none none;
+  padding: 2rem 3.4rem 5.5rem;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(2, 7rem);
+  max-width: 43.9rem;
+}
+.buttons .functions {
+  grid-row: 1;
+  grid-column: 1/span 3;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 7rem);
+  grid-template-rows: 7rem;
+  gap: 2.5rem;
+  border-radius: 40px;
+}
+.buttons .operators {
+  grid-column: 4;
+  grid-row: 1/span 5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  gap: 2.5rem;
+}
+.buttons .digits {
+  grid-column: 1/span 2;
+  grid-row: 2/span 4;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(3, 7rem);
+  grid-template-rows: repeat(4, 7rem);
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    scale: 0.68;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .container {
+    scale: 0.5;
+  }
+}
